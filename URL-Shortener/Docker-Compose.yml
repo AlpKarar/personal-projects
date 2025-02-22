@@ -5,3 +5,9 @@ services:
     container_name: redis-cache
     ports:
       - "6379:6379"
+  mongo:
+    image: mongo:7.0-rc-nanoserver
+    restart: always
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
